@@ -5,15 +5,15 @@ import Menu from './Menu';
 const Home = () => {
 	return (
 		<div className="min-h-screen w-[100vw] px-8 sm:px-10 md:px-20">
-			<div className="pt-[15px] sm:pt[20px] md:pt-[35px] ">
-				<div className="md:flex gap-10">
-					<div className="">
+			<div className=" h-full pt-[15px] sm:pt[20px] md:pt-[35px] ">
+				<div className=" h-full md:flex gap-10">
+					<div className="h-full">
 						<Menu />
 					</div>
-					<div className="flex-1 border">
+					<div className="h-full flex-1 border overflow-y-auto">
 						<Content />
 					</div>
-					<div className=" border">
+					<div className="h-full bg-white rounded-t-[18px]">
 						<Cart></Cart>
 					</div>
 				</div>

@@ -30,7 +30,7 @@ const Navbar = () => {
 				isScrolled ? 'shadow-xl bg-white duration-200' : ''
 			}`}
 		>
-			<div className=" w-full h-full flex justify-between items-center border-b">
+			<div className=" w-full h-full flex justify-between items-center border-b border-gray-300">
 				{/* ----Left Part---- */}
 				<div className=" flex gap-8 items-center">
 					{/* ----Logo--- */}

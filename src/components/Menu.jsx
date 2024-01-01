@@ -13,7 +13,7 @@ const Menu = () => {
 	}, []);
 
 	return (
-		<div className="sm:flex md:block justify-between items-start">
+		<div className="sm:flex md:block justify-between items-start stic top-0">
 			{/* All Category */}
 			<div className=" flex gap-[5px] justify-start items-center bg-white md:pl-5 pl-5 pr-5 md:pr-20 py-2 md:py-[15px] rounded-[13px] hover:bg-opacity-50 duration-150 shadow shadow-gray-100 cursor-pointer">
 				<FiArrowLeft size={20} className="font-semibold" />
