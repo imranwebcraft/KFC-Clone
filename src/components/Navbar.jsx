@@ -10,7 +10,7 @@ const Navbar = () => {
 	const [open, setOpen] = useState(false);
 
 	return (
-		<header className="w-[100%] h-[80px] bg-white fixed top-0 left-0 px-7">
+		<header className="w-[100%] h-[80px] bg-white fixed top-0 left-0 px-7 z-[99]">
 			<div className=" w-full h-full flex justify-between items-center border-b">
 				{/* ----Left Part---- */}
 				<div className=" flex gap-8 items-center">
@@ -64,7 +64,7 @@ const Navbar = () => {
 				</div>
 
 				{open && (
-					<div className="absolute tilt-in-top-1 md:hidden inset-0 bg-slate-900 h-screen w-[70vw] px-4 flex flex-col justify-start gap-8 pt-16">
+					<div className="absolute tilt-in-top-1 md:hidden inset-0 bg-slate-900 h-screen w-[70vw] px-4 flex flex-col justify-start gap-8 pt-16 z-10">
 						{/* ----Location Mobile View--- */}
 						<div className="relative hover:cursor-pointer flex justify-center items-center">
 							<input

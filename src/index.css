@@ -33,3 +33,9 @@
 		opacity: 1;
 	}
 }
+
+.box-shadow {
+	box-shadow: -6px 3px 35px 4px rgba(232, 181, 0, 0.39);
+	-webkit-box-shadow: -6px 3px 35px 4px rgba(232, 181, 0, 0.39);
+	-moz-box-shadow: -6px 3px 35px 4px rgba(232, 181, 0, 0.39);
+}
