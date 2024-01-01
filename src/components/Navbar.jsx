@@ -10,7 +10,7 @@ const Navbar = () => {
 	const [open, setOpen] = useState(false);
 
 	return (
-		<header className="w-[100%] h-[80px] bg-white fixed top-0 left-0 px-7 z-[99]">
+		<header className="w-[100%] h-[80px] bg-white sticky top-0 left-0 px-7 z-[99]">
 			<div className=" w-full h-full flex justify-between items-center border-b">
 				{/* ----Left Part---- */}
 				<div className=" flex gap-8 items-center">
