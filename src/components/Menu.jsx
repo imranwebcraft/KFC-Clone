@@ -1,5 +1,5 @@
 import { FiArrowLeft } from 'react-icons/fi';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Menu = () => {
 	const [activeLink, setActiveLink] = useState(null);
@@ -7,6 +7,10 @@ const Menu = () => {
 	const handleLinkClick = (id) => {
 		setActiveLink(id);
 	};
+
+	useEffect(() => {
+		setActiveLink(1);
+	}, []);
 
 	return (
 		<div className="sm:flex md:block justify-between items-start">
@@ -33,7 +37,7 @@ const Menu = () => {
 									activeLink === id
 										? 'bg-white text-black font-medium'
 										: ' text-neutral-800'
-								} pl-5 pr-5 md:pr-20 py-1 md:py-[15px] rounded-[13px] hover:bg-white duration-150 shadow shadow-gray-100 cursor-pointer capitalize`}
+								} pl-5 pr-5 md:pr-20 py-1 md:py-[13px] rounded-[13px] hover:bg-white/50 duration-150 shadow shadow-gray-100 cursor-pointer capitalize`}
 							>
 								<a href="#" onClick={() => handleLinkClick(id)}>
 									{title}

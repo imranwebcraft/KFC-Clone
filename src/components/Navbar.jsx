@@ -3,14 +3,33 @@ import { TbLocationFilled } from 'react-icons/tb';
 import { GrLanguage } from 'react-icons/gr';
 import { FiMenu } from 'react-icons/fi';
 import { IoMdClose } from 'react-icons/io';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Navbar = () => {
 	// State for nav
 	const [open, setOpen] = useState(false);
 
+	const [isScrolled, setIsScrolled] = useState(false);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const scrollTop = window.scrollY;
+			setIsScrolled(scrollTop > 0);
+		};
+
+		window.addEventListener('scroll', handleScroll);
+
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, []);
+
 	return (
-		<header className="w-[100%] h-[80px] bg-white sticky top-0 left-0 px-7 z-[99]">
+		<header
+			className={`w-[100%] h-[80px] sticky top-0 left-0 px-7 z-[99] ${
+				isScrolled ? 'shadow-xl bg-white duration-200' : ''
+			}`}
+		>
 			<div className=" w-full h-full flex justify-between items-center border-b">
 				{/* ----Left Part---- */}
 				<div className=" flex gap-8 items-center">
