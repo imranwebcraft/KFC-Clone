@@ -2,5 +2,5 @@
 
 ---
 
-Project Name: KFC Clone
-Live link:
+Project Name: KFC Mart <br/>
+Live link: https://kfc-mart-6ecd9.web.app
