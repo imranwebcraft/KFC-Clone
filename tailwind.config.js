@@ -9,6 +9,8 @@ export default {
 			colors: {
 				yellow: '#fce000',
 				offWhite: '#b8b8b8',
+				// greenBg: '#72aa52',
+				// greenText: '#72aa52',
 			},
 		},
 	},
