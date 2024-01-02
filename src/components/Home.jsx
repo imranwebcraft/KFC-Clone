@@ -10,7 +10,7 @@ const Home = () => {
 					<div className="h-full">
 						<Menu />
 					</div>
-					<div className="h-full flex-1 border overflow-y-auto">
+					<div className="h-full flex-1">
 						<Content />
 					</div>
 					<div className="h-full bg-white rounded-t-[18px]">

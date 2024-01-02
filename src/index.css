@@ -39,3 +39,11 @@
 	-webkit-box-shadow: -6px 3px 35px 4px rgba(232, 181, 0, 0.39);
 	-moz-box-shadow: -6px 3px 35px 4px rgba(232, 181, 0, 0.39);
 }
+
+.bg-custom-image {
+	background: linear-gradient(231.36deg, #1a000000 45.77%, #1a0000be 90.7%),
+		url('./assets/coverImage.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
