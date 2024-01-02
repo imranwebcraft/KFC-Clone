@@ -3,7 +3,7 @@ import Copyright from './Copyright';
 
 const Footer = () => {
 	return (
-		<div className=" bg-white px-6 border-b">
+		<div className=" bg-white px-6">
 			<div className="max-w-[1300px] mx-auto pt-[32px] pb-4">
 				<nav>
 					<h1 className=" font-semibold text-gray-800 pb-6">

@@ -4,16 +4,16 @@ import Menu from './Menu';
 
 const Home = () => {
 	return (
-		<div className="  w-[100vw] px-8 sm:px-10 md:px-20">
+		<div className="w-[100vw] px-6 sm:px-10 md:px-20">
 			<div className="pt-[15px] sm:pt[20px] md:pt-[35px] ">
-				<div className="h-full md:flex gap-10">
-					<div className="h-full">
+				<div className="md:flex gap-10">
+					<div className="lg:h-screen">
 						<Menu />
 					</div>
-					<div className="flex-1">
+					<div className="flex-1 lg:max-h-screen lg:overflow-y-scroll">
 						<Content />
 					</div>
-					<div className=" bg-white rounded-t-[18px] md:hidden lg:flex mt-5 md:mt-0">
+					<div className="lg:h-screen bg-white rounded-t-[18px] md:hidden lg:flex mt-5 md:mt-0">
 						<Cart></Cart>
 					</div>
 				</div>
