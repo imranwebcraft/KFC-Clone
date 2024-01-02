@@ -47,3 +47,20 @@
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
+::-webkit-scrollbar {
+	width: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: transparent;
+}
+
+body {
+	scrollbar-width: thin;
+	scrollbar-color: transparent transparent;
+}
+
+body {
+	-ms-overflow-style: none;
+}

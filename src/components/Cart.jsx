@@ -13,7 +13,7 @@ const Cart = () => {
 						Your cart is currently empty
 					</p>
 				</div>
-				<div className="border-b-2 border-gray-200"></div>
+				<div className="border-b-2 border-transparent"></div>
 			</div>
 		</div>
 	);
