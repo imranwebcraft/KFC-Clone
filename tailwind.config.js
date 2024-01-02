@@ -8,6 +8,7 @@ export default {
 			},
 			colors: {
 				yellow: '#fce000',
+				offWhite: '#b8b8b8',
 			},
 		},
 	},
