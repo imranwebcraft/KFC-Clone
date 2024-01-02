@@ -10,10 +10,10 @@ const Home = () => {
 					<div className="h-full">
 						<Menu />
 					</div>
-					<div className="h-full flex-1">
+					<div className="h-full flex-1 overflow-y-scroll">
 						<Content />
 					</div>
-					<div className="h-full bg-white rounded-t-[18px] md:hidden lg:flex mt-5">
+					<div className="h-full bg-white rounded-t-[18px] md:hidden lg:flex mt-5 md:mt-0">
 						<Cart></Cart>
 					</div>
 				</div>

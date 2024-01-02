@@ -7,7 +7,7 @@ import { newArrivalProducts, whatsNewProducts } from '../constant';
 
 const Content = () => {
 	return (
-		<section>
+		<section className=" pt-5 md:pt-0">
 			{/* Image */}
 			<section className=" relative bg-custom-image w-[100%] h-[360px] rounded-[36px]">
 				<div className=" w-[60%] h-full flex flex-col justify-center items-start absolute left-10 top-16 space-y-4">
@@ -41,7 +41,7 @@ const Content = () => {
 				<div>
 					<h1 className=" text-2xl font-bold">What&apos;s New</h1>
 				</div>
-				<div className=" flex flex-wrap gap-3 mt-5">
+				<div className=" flex justify-center md:justify-start flex-wrap gap-3 mt-5">
 					{whatsNewProducts?.map(({ id, img, price, name }) => (
 						<div
 							key={id}
@@ -63,7 +63,7 @@ const Content = () => {
 				<div>
 					<h1 className=" text-2xl font-bold">New Arrival</h1>
 				</div>
-				<div className=" flex flex-wrap gap-3 mt-5">
+				<div className=" flex justify-center md:justify-start flex-wrap gap-3 mt-5">
 					{newArrivalProducts?.map(({ id, img, price, name }) => (
 						<div
 							key={id}
